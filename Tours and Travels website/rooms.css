@@ -1,0 +1,233 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --navbar-height: 59px;
+  }
+ 
+  .h-primary{
+    font-family: 'Reggae One', cursive;
+  }
+
+  /* navigation bar */
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* height: 100%;
+      width: 100%; */
+  }
+  
+  #navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.4;
+    } 
+  
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 181px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Reggae One', cursive; */
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+#home::before{
+    content: "";
+    background: url('asb.jpg') no-repeat center center/cover; 
+    /* background: url('https://www.google.co.in/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fblack-backround-gifs&psig=AOvVaw07j9o7JIxxp1A0_FuyS8_c&ust=1640498235752000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCMiyjLei_vQCFQAAAAAdAAAAABAP') no-repeat center center/cover; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 496px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 2.90; */
+}
+#home h1 {
+    color: white;
+    text-align: center;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Zilla Slab Highlight', cursive;
+    margin-top: 243px;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.9rem;
+    /* font-family: 'Yuji Mai', serif; */
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-weight: bolder;
+}
+
+#places{
+    margin: 295px 5px;
+    display:flex;
+    font-family: 'Yuji Mai', serif;
+}
+
+#places .box{
+    border-radius: 12px;
+    padding: 34px;
+    margin: 18px 16px;
+    border-radius: 28px;
+    /* background-color: #fce4ec; */
+    margin-bottom: 20px;
+    font-family: 'Yuji Mai', serif;
+}
+
+#places .box img {
+    height: 265px;
+    display: block;
+    margin: 26px;
+    border-radius: 17px;
+    padding: -16px;
+}
+
+#placee{
+    margin: 295px 5px;
+    display:flex;
+    font-family: 'Yuji Mai', serif;
+}
+
+#placee .boxxx{
+    border-radius: 12px;
+    padding: 34px;
+    margin: 18px 16px;
+    border-radius: 28px;
+    /* background-color: #fce4ec; */
+    margin-bottom: 20px;
+    font-family: 'Yuji Mai', serif;
+}
+
+#placee .boxxx img {
+    height: 263px;
+    display: block;
+    margin: 26px;
+    border-radius: 17px;
+    width: 372px;
+}
+
+#placee .boxxx p{
+    font-family: 'Yuji Mai', serif;
+}
+
+#place{
+    margin: -317px 5px;
+    display:flex;
+    font-family: 'Yuji Mai', serif;
+}
+
+#place .boxx{
+    /* border: 2px solid brown; */
+    padding: 34px;
+    margin: 18px 16px;
+    border-radius: 28px;
+    /* background-color: #fce4ec; */
+    margin-bottom: 20px;
+    font-family: 'Yuji Mai', serif;
+}
+
+#place .boxx img {
+    height: 440px;
+    display: block;
+    margin: 26px;
+    width: 350px;
+    border-radius: 17px;
+    margin-top: 77px;
+    padding-left: 93px;
+    padding-right: 46px;
+}
+
+#place .boxx p{
+    font-family: 'Yuji Mai', serif;
+}
+
+.h-primary{
+    font-size: 3.5rem;
+    padding: 17px;
+    /* font-family: 'Sofia', cursive; */
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: black;
+}
+p{
+    font-size: 3.5rem;
+    padding: 17px;
+    font-family: 'Yuji Mai', serif;
+    /* font-family: 'Rancho', cursive; */
+}
+.p{
+    font-family: 'Rancho', cursive;
+    color:white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.h-secondary{
+    font-family: 'Yuji Mai', serif;
+    font-size: 2.10rem;
+    padding: 25px;
+}
+
+
+  .center{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+ /* #logo {
+    margin: 34px 45px;
+  }
+  
+  #logo img {
+    margin: -17px -26px;
+    height: 53px;
+  } */
+  
+  /* Navigation bar: List styling */
+  #navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+  } 

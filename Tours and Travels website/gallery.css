@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --navbar-height: 59px;
+  }
+  
+  /* navigation bar */
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* height: 100%;
+      width: 100%; */
+  }
+  
+  #navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.4;
+    } 
+  
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 181px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('main.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 496px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    margin-top: 243px;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Yuji Mai', serif;
+    font-weight: bolder;
+}
+
+#places{
+    margin: 295px 5px;
+    display:flex;
+    font-family: 'Yuji Mai', serif;
+}
+
+#places .box{
+    border-radius: 12px;
+    padding: 34px;
+    margin: 18px 16px;
+    border-radius: 28px;
+    /* background-color: #fce4ec; */
+    margin-bottom: 20px;
+    font-family: 'Yuji Mai', serif;
+}
+
+#places .box img{
+     height: 440px;
+     display: block;
+    margin: 26px;
+    border-radius: 17px;
+}
+
+#places .box p{
+    font-family: 'Yuji Mai', serif;
+}
+
+#place{
+    margin: -317px 5px;
+    display:flex;
+    font-family: 'Yuji Mai', serif;
+}
+
+#place .boxx{
+    /* border: 2px solid brown; */
+    padding: 34px;
+    margin: 18px 16px;
+    border-radius: 28px;
+    /* background-color: #fce4ec; */
+    margin-bottom: 20px;
+    font-family: 'Yuji Mai', serif;
+}
+
+#place .boxx img {
+    height: 440px;
+    display: block;
+    margin: 26px;
+    width: 350px;
+    border-radius: 17px;
+}
+
+#place .boxx p{
+    font-family: 'Yuji Mai', serif;
+}
+
+.h-primary{
+    font-size: 3.5rem;
+    padding: 17px;
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+p{
+    font-size: 3.5rem;
+    padding: 17px;
+    font-family: 'Yuji Mai', serif;
+}
+
+.h-secondary{
+    font-family: 'Yuji Mai', serif;
+    font-size: 2.10rem;
+    padding: 25px;
+}
+
+
+  .center{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+ /* #logo {
+    margin: 34px 45px;
+  }
+  
+  #logo img {
+    margin: -17px -26px;
+    height: 53px;
+  } */
+  
+  /* Navigation bar: List styling */
+  #navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+  } 
+
+  .t{
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: chartreuse;
+    margin-left: 110px;
+    font-family: 'Luxurious Roman', cursive;
+  }

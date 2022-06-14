@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book_tour</title>
+    <link rel="stylesheet" href="booktour.css">
+    <link rel="stylesheet" href="booktour.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h2>BOOKING FORM</h2>
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Your Destination</label>
+          <select id="room-selection" name="des_preference" required>
+              <option value="">Choose a Destination from the List</option>
+              <option value="connecting">Goa</option>
+              <option value="adjoining">Kashmir</option>
+              <option value="adjacent">Srinagar</option>
+              <option value="adjacent">Sikkhim</option>
+              <option value="adjacent">Udaipur</option>
+              <option value="adjacent">Kerela</option>
+              <option value="adjacent">Himachal</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button type="submit">Select To Book</button>
+      </form>
+</body>
+</html>

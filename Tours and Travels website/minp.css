@@ -1,0 +1,106 @@
+body {
+    color: white;
+    background-color: black;
+    text-align: center;
+  }
+  header::before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: url("https://source.unsplash.com/1600x900/?travel,beautiful places")
+      no-repeat center center/cover;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+  }
+  .navigation {
+    display: flex;
+    font-size: 23px;
+  }
+  li {
+    padding: 20px 23px;
+    list-style: none;
+    margin: 0px 12px;
+    font-family: "Bree Serif", serif;
+  }
+  /* #box:hover{
+    transition:  1s ease ; 
+    height: 200px; 
+    width: 200px;  
+    font-size: 40px; 
+  } */
+  #box {
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#box:hover{
+    text-shadow: 10px solid turquoise;
+    text-decoration-color: purple;
+    cursor: pointer;
+}
+
+  h1 {
+    font-size: 4rem;
+    font-family: "Playball", cursive;
+  }
+  .navbar li a:hover {
+    font-weight: bold;
+    color: mediumvioletred;
+    text-decoration: none;
+    background-color: rgb(223, 208, 128);
+    border-radius: 15px;
+    padding: 3px 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .btn {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:black;
+    color: white;
+    margin-top: 77px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px lightblue;
+}
+.btn a:hover{
+    color:yellowgreen;
+    border:crimson;
+}
+
+  .main {
+    align-items: center;
+    height: 491px;
+    justify-content: center;
+    padding: 53px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 92px; */
+  }
+  footer::before {
+    font-size: 4rem;
+    font-family: "Playball", cursive;
+    background: url("https://source.unsplash.com/1600x900/?pictures,rooms")
+      no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    content: "";
+    display: flex;
+  }
